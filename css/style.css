@@ -1,0 +1,82 @@
+:root {
+    --bs-primary: #0d6efd; /* Standard Bootstrap Blue - can be changed */
+    --bs-primary-rgb: 13, 110, 253; /* Corresponding RGB for Bootstrap functions */
+    /* Let's pick a slightly more custom professional blue: */
+    --custom-primary-color: #2c3e50; /* A dark slate blue */
+    --custom-primary-hover-color: #1a252f; /* A darker shade for hover */
+}
+
+/* Override Bootstrap's primary color if the template uses it directly,
+   or use this custom color for specific elements.
+   For Start Bootstrap "Resume" like templates, they often have their own CSS variables
+   for the theme color. We might need to override that if known, or apply
+   our color to specific elements.
+*/
+
+/* Example: Applying to sidebar background if the template has an ID like #sidebar-wrapper */
+/* #sidebar-wrapper { */
+/*    background-color: var(--custom-primary-color); */
+/* } */
+
+/* Applying to text-primary class elements if we want to change their color */
+.text-primary {
+    color: var(--custom-primary-color) !important; /* Important to override Bootstrap if needed */
+}
+
+a {
+    color: var(--custom-primary-color);
+}
+
+a:hover {
+    color: var(--custom-primary-hover-color);
+}
+
+/* Style for navigation links in the sidebar */
+/* The sidebar in the "Resume" template by Start Bootstrap has id="sideNav" and class="bg-primary" */
+/* We need to target those links specifically if we want to change their color */
+#sideNav .nav-link {
+    color: rgba(255, 255, 255, 0.7); /* Light text for dark sidebar */
+}
+#sideNav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+#sideNav .nav-item .nav-link.active { /* Active link style */
+    color: white; 
+}
+
+/* General body and heading font (optional, Bootstrap defaults are usually good) */
+body {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* Example: Slightly increase base font size for readability */
+    /* font-size: 1.05rem; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 700; /* Make headings a bit bolder if not already */
+}
+
+.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.resume-section-content {
+    width: 100%;
+}
+
+/* Ensure Bootstrap's default primary color is overridden for components like buttons if desired */
+/* And for the sidebar background as it uses .bg-primary */
+.bg-primary {
+    background-color: var(--custom-primary-color) !important; /* Important to override Bootstrap */
+}
+
+.btn-primary {
+    background-color: var(--custom-primary-color);
+    border-color: var(--custom-primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--custom-primary-hover-color);
+    border-color: var(--custom-primary-hover-color);
+}
