@@ -1,10 +1,8 @@
 - 👋 Hi, I’m Isuru Hansaka
 - 👀 I’m interested in Web Design and programming
-- 🌱 I’m currently learning Angular, Python machine learning
-- 💞️ I’m looking to collaborate on ...
+- 🌱 I’m currently learning Angular, Python, machine learning
 - 📫 How to reach me hansakaisuru1999@gmail.com or +94760211392
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+-  Contact me at https://isuruhansaka.me
 
 <!---
 HansakaIsuru/HansakaIsuru is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
